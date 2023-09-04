@@ -1,0 +1,46 @@
+name: my_first_app_book
+description: A new Flutter project.
+
+publish_to: "non"
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - assets/image/
+    - assets/icons/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/inter/Inter-Regular.ttf
+          weight: 400
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/play_fair_display/PlayfairDisplay-Medium.ttf
+          weight: 500
+

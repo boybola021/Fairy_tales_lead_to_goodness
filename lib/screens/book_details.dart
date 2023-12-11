@@ -43,6 +43,18 @@ class _BookDetailsPageState extends State<BookDetailsPage> {
           ),
         ),
       ),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(book[widget.index].bookName,style: const TextStyle(fontSize: 23,color: Colors.black),),
+        leading: IconButton(
+          onPressed: (){
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back,color: Colors.black,),
+        ),
+      ),
       body: SafeArea(
         child: BookDiscription(x: x, y: y, index: widget.index,pageIndex: widget.pageIndex,),
       ),

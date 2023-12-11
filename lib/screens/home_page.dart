@@ -94,6 +94,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: GridView.count(
                 //primary: true,
+                physics: const BouncingScrollPhysics(),
                 clipBehavior: Clip.antiAlias,
                 shrinkWrap: true,
                 crossAxisCount: 2,
